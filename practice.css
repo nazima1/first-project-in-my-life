@@ -1,0 +1,1562 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+section{
+    margin: 30px 0px;  
+}
+*{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; }
+/*---------top adderss bar-------*/
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.adderss_icon {
+    width: 100%;
+}
+
+.left-address {
+    width: 50%;
+    float: left;
+}
+
+.right_icon_main {
+    width: 50%;
+    float: right;
+    padding: 6px 0px;
+}
+span.call {
+    width: 211px;
+    float: left;
+    padding: 10px 0px;
+    border-left: 1px solid orange;
+}
+
+span.envelap {
+    width: 274px;
+    float: left;
+    padding: 10px 0px;
+    border-left: 1px solid orange;
+}
+
+span.call i {
+    margin-right: 7px;
+    color: red;
+    margin-left: 11px;
+}
+
+span.envelap i {
+    margin-right: 11px;
+    color: red;
+    margin-left: 11px;
+}
+.all_icon {
+    float: right;
+}
+
+.all_icon i {
+    display: inline-block;
+    padding: 6px 8px;
+    border-left: 1px solid tomato;
+    transition: .5s;
+}
+.background_top {
+    background: #E9EBEC;
+    overflow: hidden;
+}
+
+.all_icon i:last-child {
+    border-right: 1px solid tomato;
+}
+.all_icon i:hover {
+    color: red;
+}
+/*--------navigation bar main------*/
+.main_navigation {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 0px 1px 0px #ddd;
+    z-index: 9999;
+}
+
+.nav_wraper {
+    width: 100%;
+    display: table;
+}
+
+.logo_left {
+    width: 200px;
+    float: left;
+}
+
+.logo_left img {
+    padding: 15px 0px;
+}
+
+.contant_right {
+    width: 940px;
+    float: left;
+}
+
+ul.main_nav_bar {
+    list-style: none;
+    float: right;
+}
+
+ul.main_nav_bar li {
+    float: left;
+    padding: 12px;
+    position: relative;
+}
+
+ul.main_nav_bar li a {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 19px 8px;
+    display: inline-block;
+    transition: .3s;
+    color: black;
+}
+
+ul.main_nav_bar i {
+    font-size: 17px;
+    margin-left: 4px;
+}
+
+ul.main_nav_bar li:last-child {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+/*---nav bar hover-----*/
+ul.main_nav_bar li a:hover{
+    color: tomato;
+}
+
+/*--- for sub navigation----*/
+
+ul.sub_nav_1 {
+    list-style: none;
+    width: 250px;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 17px 14px;
+    position: absolute;
+    top: 83px;
+    transform: scaleY(0);
+    visibility: hidden;
+    transform-origin: top;
+    transition: .5s;
+}
+
+ul.sub_nav_1 li {
+    float: none;
+    padding: 2px 5px;
+    position: relative;
+
+}
+
+ul.sub_nav_1 li a {
+    font-size: 13px;
+    padding: 2px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+ul.main_nav_bar li:hover ul.sub_nav_1{
+    transform: scaleY(1);
+    visibility: visible;
+}
+/*---- nav top before-1------*/
+
+ul.sub_nav_1 li a:before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: tomato;
+    vertical-align: middle;
+    margin-right: 13px;
+    transition: .3s;
+}
+ul.sub_nav_1 li:hover a:before{
+    width: 13px;
+}
+/*--- for sub menu 2-----*/
+
+ul.sub_menu_2 {
+    list-style: none;
+    width: 176px;
+    background: white;
+    border-left: 1px solid #ddd;
+    padding: 17px 14px;
+    position: absolute;
+    top: -9px;
+    left: 264px;
+    transform: scaleX(0);
+    visibility: hidden;
+    transform-origin: left;
+    transition: .5s;
+}
+
+ul.sub_menu_2 li {
+    float: none;
+}
+
+
+/*--- sub menu 2 transition---*/
+
+ul.sub_nav_1 li:hover ul.sub_menu_2{
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+
+
+/*---- nav top before-2------*/
+
+ul.sub_menu_2 li a:before {
+    content: "";
+    display: inline-block;
+    width: 0px !important;
+    height: 2px;
+    background: tomato;
+    vertical-align: middle;
+    margin-right: 13px;
+    transition: .3s;
+}
+ul.sub_menu_2 li:hover a:before{
+    width: 13px !important;
+}
+
+
+
+/*----- sub menu upstair 3---*/
+
+
+ul.sub_menu_upstair_3 {
+    padding: 14px 0px;
+    list-style: none;
+    width: 250px;
+    background: white;
+    position: absolute;
+    top: 82px;
+    transform: scaleY(0);
+    border-top: 2px solid #ddd;
+    transform-origin: top;
+    visibility: hidden;
+    transition: .5s;
+}
+
+ul.sub_menu_upstair_3 li {
+    float: none;
+    padding: 0px 10px;
+}
+
+ul.sub_menu_upstair_3 li a {
+    font-size: 16px;
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 4px 2px;
+}
+/*----- sub menu upstair 3 transiton---*/
+
+ul.main_nav_bar li:hover ul.sub_menu_upstair_3{
+    transform: scaleY(1);
+    visibility: visible;
+}
+/*---- frist success slider ---*/
+
+section#success_section {
+    background: url(image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.text_wraper_main {
+    width: 500px;
+}
+
+.text_wraper_main h1 {
+    font-size: 41px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px 0px;
+    margin-top: 90px;
+}
+
+.text_top p {
+    font-size: 20px;
+    font-family: 'Oswald';
+    color: white;
+    margin: 32px 0px;
+}
+/*--button 1--*/
+button.button_1 {
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 33px;
+    background: #ff7979;
+    outline: none;
+}
+
+button.button_1 span {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 19px;
+    padding: 9px 0px;
+    display: block;
+}
+button.button_1:hover {
+    background:#30336b;
+    color: black;
+}
+
+/*-- slider radius ----*/
+.slider_radius {
+    width: 48px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider_radius span {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #ddd;
+    display: block;
+    border-radius: 100px;
+    float: left;
+    margin: 27px 0px;
+    margin-right: 8px;
+}
+.slider_radius span:last-child {
+    background: tomato;
+    margin-right: 0px;
+}
+
+/*----- single box  section 2---*/
+section#section_second_2 {
+    background: #aaa69d38;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.single_box {
+    width: 260px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 33px;
+    border: 1px solid #ddd;
+    margin: 125px 14px;
+    background: white;
+    border-radius: 11px;
+    transition: .5s;
+}
+
+.single_box:last-child {
+    margin-right: 0px;
+}
+
+.top_icon {
+    width: 50px;
+    margin: auto;
+    padding: 5px;
+}
+
+.top_icon i {
+    font-size: 59px;
+    margin: 24px 0px;
+}
+
+.middle_text {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.middle_text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 157px;
+    margin: auto;
+    text-align: center;
+}
+
+.middle_text p {
+    font-size: 15px;
+    font-family: 'Oswald';
+    margin: 16px 0px;
+}
+
+.larn_button {
+    width: 219px;
+    margin: auto;
+    display: block;
+    font-family: 'Oswald';
+    margin-bottom: 32px;
+}
+
+.larn_button i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+p.more_button a {
+    text-decoration: none;
+    color: tomato;
+}
+
+/*----- single box hover effect---*/
+
+.single_box:hover {
+    background: #273c75d9;
+    color: white;
+}
+
+.single_box:hover a{
+    
+    color: white;
+}
+
+.single_box:hover i{
+    
+    color: #33d9b2;
+}
+
+.single_box:hover .more_button i{
+    color: white;
+}
+.single_box.active{
+    background: green;
+    color: white;
+}
+.single_box.active .more_button i{
+   
+    color: white;
+}
+.single_box.active .more_button a{
+   
+    color: white;
+}
+
+/*----- work with our team ------*/
+section#work_with_our_team {
+    overflow: hidden;
+}
+
+.wraper_work {
+    width: 100%;
+    min-height: 392px;
+    overflow: hidden;
+}
+
+.image_wraper {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.main_contant_right {
+    width: 50%;
+    float: left;
+}
+
+.iamge_left_1 img {}
+
+.iamge_left_1 img {
+    width: 100%;
+}
+
+.contant_right_1 {width: 100%;padding: 0px 33px;}
+
+.top_text h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h1 {}
+
+.top_text p {
+    font-size: 17px;
+    font-family: 'Oswald';
+    text-align: justify;
+    margin: 3px 0px;
+    line-height: 28px;
+}
+
+.bottom_text {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.one_ul_left {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.one_ul_box {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+ul.box_1 {
+    list-style: none;
+}
+
+ul.box_1 li {
+    font-size: 20px;
+    line-height: 50px;
+    list-style: none;
+}
+
+.one_ul_box li {
+    font-size: 20px;
+    line-height: 50px;
+    list-style: none;
+}
+.one_ul_left i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.one_ul_box i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.work_button {
+    display: block;
+    width: 174px;
+    background: tomato;
+    padding: 11px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-top: 203px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.work_button a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald';
+    margin: 30px 0px;
+}
+
+.work_button:hover {
+    background: #706fd3;
+    color: white;
+    
+}
+
+/*================= accountable four box ======================*/
+
+section#estimate_section {
+    overflow: hidden;
+    background: linear-gradient(#00000078,#00000078), url(image/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 89px 0px;
+    margin-bottom: 0px;
+}
+
+.wraper_inner {
+    width: 100%;
+}
+
+.single_inner {
+    width: 260px;
+    float: left;
+    margin: 95px 0px;
+    background: #ffffff1f;
+    margin-right: 22px;
+    padding: 56px 0px;
+    border-radius: 7px;
+}
+
+.single_inner:last-child {
+    margin-right: 0px;
+}
+
+.top_inner_icon {
+    width: 50px;
+    margin: auto;
+    font-size: 45px;
+    padding: 15px;
+    color: white;
+}
+
+.accountable {
+    text-align: center;
+    color: white;
+}
+
+.accountable h1 {
+    font-size: 53px;
+}
+
+h1 {}
+
+.accountable p {
+    font-size: 20px;
+    margin: 37px 0px;
+    margin-top: 6px;
+    color: #ddd;
+    font-weight: bold;
+}
+/*========== more from us ===============*/
+section#more_from_us {
+    overflow: hidden;
+    background: #dddddd45;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.top_text_contant {
+    width: 433px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 49px;
+}
+
+.top_text_contant h1 {
+    text-transform: uppercase;
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 26px;
+      position: relative;
+}
+
+.top_text_contant p {
+    font-size: 20px;
+    font-family: 'Oswald';
+}
+
+.bottom_text_contant {
+    width: 100%;
+    column-count: 4;
+}
+
+.single_more {
+    width: 260px;
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+}
+
+.single_more:last-child {
+    margin-right: 0px;
+}
+
+.image_more img {
+    width: 100%;
+}
+
+.contant_text h1 {
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.contant_text p {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.more_from_wraper {margin-bottom: 150px;margin-top: 110px;}
+.contant_text {
+    padding: 11px;
+}
+/*============= before ==============*/
+
+
+.top_text_contant h1:before {content: "";width: 100px;height: 2px;border: 1px solid green;position: absolute;top: 75px;border-radius: 28px;left: 155px;}
+
+
+/*=============== check out our latest idea ==================*/
+
+
+.background_img_left_1 {
+    background: url(image/architect-module.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 372px;
+    background-size: cover;
+    width: 50%;
+    float: left;
+}
+
+.background_contant_right_1 {
+    width: 50%;
+    float: right;
+    background: #bca6984f;
+    min-height: 372px;
+}
+
+.min_text {
+    width: 600px;
+    padding: 0px 34px;
+    margin-top: 31px;
+}
+
+.background_contant_right_1 {
+}
+
+.min_text h2 {text-transform: uppercase;font-weight: 500;font-size: 30px;}
+
+.text_or_box_wrap {
+    padding: 0px 34px;
+    column-count: 2;
+}
+
+.min_text p {
+    font-size: 21px;
+    margin: 10px 0px;
+    margin-bottom: 48px;
+}
+
+.single_min_box {
+    width: 400px;
+    float: left;
+    margin-bottom: 21px;
+}
+
+.left_icon {
+    width: 70px;
+    font-size: 50px;
+    float: left;
+    color: #fd79a8;
+}
+
+.right_text {
+    width: 270px;
+    float: left;
+}
+
+.right_text h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+section#check_out_latest {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*=========== social image or icon ============*/
+
+section#social_section {
+    overflow: hidden;
+}
+
+.social_text {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.social_text h1 {
+}
+.social_top_text h2 {
+    text-transform: uppercase;
+    font-size: 43px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.social_top_text p {
+    font-size: 20px;
+    font-family: 'Oswald';
+    margin: 20px 0px;
+}
+
+.social_top_text h2 {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: unset;
+    margin-top: 50px;
+}
+
+.social_top_text p {
+    font-size: 20px;
+    font-family: 'Oswald';
+    margin: 20px 0px;
+}
+
+.social_.contant {
+    column-count: 4;
+}
+
+.single_social_icon {
+    width: 260px;
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+    margin-top: 55px;
+}
+
+.single_social_icon:last-child {
+    margin-right: 0px;
+}
+
+.image_social img {
+    width: 100%;
+}
+
+/*======== icon related four image ===========*/
+.image_social {
+    position: relative;
+}
+.social_icons {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.social_icons a {
+    display: block;
+    float: left;
+    width: 20px;
+    background: red;
+    padding: 3px;
+    border-radius: 100%;
+    display: grid;
+    text-decoration: none;
+    place-items: center;
+    margin-right: 6px;
+    height: 20px;
+    transition: .5s;
+}
+.single_social_icon:hover a:first-child{
+    transform: translateY(30px);
+    transition: .90s;
+    opacity: 1;
+}
+.single_social_icon:hover a:nth-child(2){
+    transform: translateY(30px);
+     transition: .70s;
+      opacity: 1;
+}
+.single_social_icon:hover a:nth-child(3){
+    transform: translateY(30px);
+     transition: .50s;
+      opacity: 1;
+}
+.single_social_icon:hover a:last-child{
+    transform: translateY(30px);
+     transition: .30s;
+      opacity: 1;
+}
+
+
+
+.social_icons a:first-child{
+    background: #3b5998;
+    color: white;
+    opacity: 0;
+}
+.social_icons a:nth-child(2){
+    background:  #FF0000;
+    color: white;
+     opacity: 0;
+}
+.social_icons a:nth-child(3){
+    background: #00acee;
+    color: white;
+     opacity: 0;
+}
+.social_icons a:last-child{
+    background:  #C13584;
+    color: white;
+     opacity: 0;
+}
+.address_social {
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.address_social h3 {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.address_social p {
+    font-family: 'Oswald';
+    text-transform: capitalize;
+}
+
+/*========== button 3 ===========*/
+.button_3 {
+    text-align: center;
+    width: 177px;
+    margin: auto;
+    background: #182C61;
+    
+    border-radius: 5px;
+    margin-top: 58px;
+    margin-bottom: 50px;
+}
+
+.button_3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px;
+    display: block;
+    color: white;
+    font-family: 'Oswald';
+}
+.button_3:hover {
+    background: #F97F51;
+    color: white;
+}
+
+/*============= same six picture iteams ===================*/
+section#same_six_pic_section {
+    overflow: hidden;
+}
+
+.six_top_text {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.six_top_text h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 48px;
+}
+
+.six_top_text p {
+    font-family: 'Oswald';
+}
+
+.six_pic_wraper {
+    column-count: 3;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.sinle_six_box {
+    width: 360px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    position: relative;
+}
+
+.sinle_six_box:last-child {
+    margin-right: 0px;
+}
+.six_image img {
+    width: 100%;
+}
+/*================ text six contant ===========*/
+.six_box_text {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to top, black, transparent 200px);
+    box-sizing: border-box;
+    padding: 60px 26px;
+    padding-bottom: 0px;
+    transition: .3s;
+     opacity: 0;
+}
+
+.six_box_text a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.six_box_text h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.six_learn {
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    transform: translateX(-76px);
+   
+    
+}
+
+.six_learn a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    color: tomato;
+    font-size: 15px;
+}
+.six_learn i {
+    font-size: 13px;
+    margin-left: 4px;
+}
+/*============= hover effect six text ==================*/
+
+.sinle_six_box:hover .six_box_text{
+    padding-bottom: 40px;
+    opacity: 1;
+}
+
+.sinle_six_box:hover .six_learn{
+    transform: translateX(25px);
+    transition-delay: .4s;
+    
+}
+
+/*============= three box image or text ====================*/
+section.three_box_con {
+    overflow: hidden;
+    background: #c8d6e54a;
+    margin-bottom: 0px;
+}
+
+.wraper_three {
+    width: 100%;
+}
+
+.single_three {
+    width: 360px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 123px;
+}
+
+.single_three:last-child {
+    margin-right: 0px;
+}
+
+.three_image img {
+    width: 100%;
+    transition: .5s;
+}
+
+.three_text_maia {
+    box-sizing: border-box;
+    padding: 13px;
+    overflow: hidden;
+}
+
+.date {
+    font-family: 'Oswald';
+    width: 100%;
+    position: relative;
+}
+
+span.date_left {
+    width: 135px;
+    display: block;
+    float: left;
+}
+
+span.comment_right {
+    width: 195px;
+    display: block;
+    float: left;
+}
+
+.three_min_text h2 {
+    font-weight: 500;
+    margin-top: 45px;
+}
+
+.three_min_text {
+    width: 90%;
+}
+
+.three_min_text p {
+    font-family: 'Oswald';
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+span.date_left:before {
+    content: "";
+width: 28px;
+height: 2px;
+background: #ff9f43;
+display: block;
+position: absolute;
+top: 13px;left: 89px;
+}
+.comment_right:hover {
+    color: #1dd1a1
+}
+/*============== image three hover effect ========================*/
+.three_image{ overflow: hidden; }
+.single_three:hover .three_image img{
+    transform: scale(1.2);
+}
+
+/*==================== bottom section ======================*/
+section#bottom_adderess {
+    overflow: hidden;
+    background: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wraper_bottom {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.four_bottom_main {
+    width: 265px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 26px;
+}
+
+.four_bottom_main:last-child {
+    margin-right: 0px;
+}
+
+.four_bottom_main h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 27px;
+    color: wheat;
+    margin-top: 168px;
+}
+/*=========== about 1 ============*/
+.about_1 p {
+    font-family: 'Oswald';
+    text-align: justify;
+    width: 253px;
+    margin-bottom: 32px;
+    color: white;
+}
+
+ul.about_icon a {
+    display: block;
+    float: left;
+    display: grid;
+    text-decoration: none;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    place-items: center;
+    padding: 4px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+ul.about_icon a:first-child{
+    background: #3b5998;
+    color: white;
+    
+}
+ul.about_icon a:nth-child(2){
+    background:  #FF0000;
+    color: white;
+    
+}
+ul.about_icon a:nth-child(3){
+    background: #00acee;
+    color: white;
+    
+}
+ul.about_icon a:last-child{
+    background:  #C13584;
+    color: white;
+    
+}
+ul.about_icon a:hover {
+    background: white;
+    color: black;
+}
+
+/*========== about us ===============*/
+.single_contact_us {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_icon_left {
+    width: 44px;
+    float: left;
+}
+
+.home_icon_left i {
+    font-size: 22px;
+    margin-top: 12px;
+    color: orange;
+}
+
+.details_right {
+    width: 206px;
+    float: left;
+    margin-left: 4px;
+    margin-bottom: 14px;
+}
+
+.details_right h6 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+}
+
+.main_contact {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.call_icon_left {
+    width: 35px;
+    float: left;
+}
+
+.call_icon_left i {
+    font-size: 21px;
+    color: orange;
+    margin-top: 11px;
+}
+
+.call_right {
+    width: 225px;
+    float: left;
+}
+
+.call_right h6 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 14px;
+    color: white;
+}
+
+.main_mail {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.mail_icon {
+    width: 23px;
+    float: left;
+}
+
+.mail_icon i {
+    font-size: 23px;
+    margin-top: 10px;
+    color: orange;
+}
+
+.mail_right {
+    width: 219px;
+    float: left;
+    margin-left: 23px;
+    margin-top: 6px;
+}
+.mail_right p {
+    font-size: 15px;
+    color: white;
+}
+/*========= usefull us ========*/
+ul.bottom_li {
+    width: 100%;
+    list-style: none;
+}
+
+ul.bottom_li li {
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    color: white;
+}
+
+ul.bottom_li a {}
+
+ul.bottom_li i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+/*========= recent post =============*/
+.recent_post_main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.date_botton {
+    width: 54px;
+    float: left;
+    text-align: center;
+    background: #ffffff78;
+    border-radius: 5px;
+}
+
+.text_icon {
+    width: 211px;
+    float: left;
+}
+
+.text_icon h2 {
+    font-size: 17px;
+    margin-left: 20px;
+    color: white;
+}
+
+.date_text_main {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.icon_message {
+    width: 100%;
+    color: white;
+}
+
+span.admin {
+    width: 75px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+span.count_sms {
+    width: 65px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+span.admin i {
+    margin-right: 8px;
+    color: orange;
+}
+
+span.count_sms i {
+    margin-right: 9px;
+    color: orange;
+}
+
+.date_botton p {
+    font-size: 12px;
+    font-family: 'Oswald';
+    text-transform: capitalize;
+}
+p.year {
+    margin-bottom: 8px;
+}
+.text_icon a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.text_icon a:hover {
+    color: tomato;
+}
+.date_botton h2 {color: white;}
+
+.date_botton p {
+    color: white;
+}
+/*============= recent post ================*/
+.copy_main {
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    margin-top: 9px;
+}
+
+.wraper_copy {
+    width: 100%;
+}
+
+.copy_left {
+    width: 50%;
+    float: left;
+}
+
+.copy_right {
+    width: 50%;
+    float: left;
+}
+
+.copy_left p {
+    padding: 29px 0px;
+    color: #ddd;
+    font-family: 'Oswald';
+}
+
+ul.copy_li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+}
+
+ul.copy_li li {
+    float: left;
+    margin-top: 21px;
+}
+
+ul.copy_li a {
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ddd;
+}
+/*========================== submit box ===================*/
+
+input#submit_button {
+    width: 110px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+    top: 0px;
+    left: 176px;
+}
+section.submit_box {
+    margin: 0px;
+    background: #EFF3F7;
+}
+.submit_wraper {
+    background: #EE5A24;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-bottom: -87px;
+    border-radius: 14px;
+}
+
+.single_submit {
+    width: 360px;
+    float: left;
+    margin-right: 20px;
+    padding: 44px 33px;
+    box-sizing: border-box;
+}
+
+.single_submit h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.main_input {
+    width: 100%;
+}
+
+.main_input input {
+    width: 262px;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 57px;
+    border: none;
+    outline: none;
+    position: absolute;
+}
+
+
+.submit_address p {
+    font-size: 15px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: white;
+}
+
+ul.submit_icon a {
+    display: inline-block;
+    float: left;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+ul.submit_icon a:first-child{
+    background: #3b5998;
+    color: white;
+    
+}
+ul.submit_icon a:nth-child(2){
+    background:  #FF0000;
+    color: white;
+    
+}
+ul.submit_icon a:nth-child(3){
+    background: #00acee;
+    color: white;
+    
+}
+ul.submit_icon a:last-child{
+    background:  #C13584;
+    color: white;
+    
+}
+ul.submit_icon a:hover {
+    background: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
